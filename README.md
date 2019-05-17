@@ -15,7 +15,7 @@ Differencies between original `paq1.cpp` and `paq1s.cs`:
 * All "additional" modesls are removed (string match, word, cyclic aka fixed-length record). This reduces compression, but not dramatically. The main (most general) direct context model is here.
 * Simplified counters (like Counter3 in original PAQ1 source code)
 * Uses standard C# hashtable (Dictionary)
-* Some other non-essential functionaly is omitted (file decompression, writing and reading of PAQ archive header)
+* Some other non-essential functionality is omitted (file decompression, writing and reading of PAQ archive header)
 
 This implementation gives approximately the same results as original PAQ1 with models `m2`-`m4` disabled.
 
