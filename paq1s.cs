@@ -294,7 +294,6 @@ class App {
     WriteLine($"orig size: {format_int(bs / 8)}");
     WriteLine($"comp size: {format_int(len(cbits) / 8)}");
     WriteLine($"ratio: {format_float(cbs * 100.0 / bs)}%");
-    //var bpc = Floor(cbs * 1.0 / (bs / 8) * 100.0) / 100;
     var bpc = cbs * 1.0 / (bs / 8);
     WriteLine($"{format_float(bpc)} bpc");
 
@@ -345,7 +344,7 @@ class App {
 }
 
 class Program {
-	static void Main(string[] args) {
+  static void Main(string[] args) {
     new App(args);
-	}
+  }
 }
